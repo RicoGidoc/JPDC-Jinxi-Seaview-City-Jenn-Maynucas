@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Area</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0a4d68, #088395);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .parking-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .parking-card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            padding: 20px;
+        }
+
+        .parking-card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* IMAGE LAYOUT */
+        .image-gallery {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery div {
+            overflow: hidden;
+            border-radius: 10px;
+            width: 350px;
+            height: 420px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        .parking-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #0a4d68;
+        }
+
+        .parking-content p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .icon {
+            color: #088395;
+            margin-right: 8px;
+        }
+
+        footer {
+            background: #0a4d68;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media(max-width:768px) {
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .image-gallery {
+                gap: 8px;
+            }
+
+            .image-gallery div {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><i class="fa-solid fa-square-parking"></i>🚦Parking Area⛔</h1>
+        <p>Safe • Spacious • Convenient Parking Spaces</p>
+    </header>
+
+    <div class="container">
+
+        <div class="parking-grid">
+
+            <!-- Card 1 -->
+            <div class="parking-card">
+
+                <div class="image-gallery">
+
+                    <div>
+                        <img src="./parking/1.jpg" alt="Parking Area">
+                    </div>
+
+                    <div>
+                        <img src="./parking/2.jpg" alt="Parking Area">
+                    </div>
+
+                    <div>
+                        <img src="./parking/3.jpg" alt="Parking Area">
+                    </div>
+                    <div>
+                        <img src="./parking/4.jpg" alt="Parking Area">
+                    </div>
+                    
+                    <div>
+                        <img src="./parking/5.jpg" alt="Parking Area">
+                    </div>
+                    
+                    <div>
+                        <img src="./parking/6.jpg" alt="Parking Area">
+                    </div>
+                    <div>
+                        <img src="./parking/7.jpg" alt="Parking Area">
+                    </div>
+                    
+                    <div>
+                        <img src="./parking/8.jpg" alt="Parking Area">
+                    </div>
+                    
+                    <div>
+                        <img src="./parking/9.jpg" alt="Parking Area">
+                    </div>
+
+                </div>
+
+
+            </div>
+                
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Parking Facilities | Modern Residential Living</p>
+    </footer>
+
+</body>
+
+</html>
