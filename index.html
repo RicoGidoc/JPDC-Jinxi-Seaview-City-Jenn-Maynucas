@@ -342,6 +342,62 @@ header,
   background: #2563eb;
 } 
 
+<!-- ✅ FIXED STYLE INCLUDING WHATSAPP -->
+
+    header,
+    #promobutton {
+      max-height: 500px;
+      opacity: 1;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    .hide-section {
+      max-height: 0;
+      opacity: 0;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 9999;
+      font-weight: bold;
+    }
+
+    .toggle-btn:hover {
+      background: #2563eb;
+    }
+
+    /* ✅ WHATSAPP FIX */
+    .chat-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 99999;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .chat-btn:hover {
+      background: #1ebe5d;
+    }
+<!-- ==================whatsApp======= -->
+   
+
   </style>
     
     
@@ -569,8 +625,7 @@ header,
 
   <!-- Footer -->
 </div>  
-</body>
-</html>
+
 
 <footer id="footer" class="footer-dark">
 
@@ -629,3 +684,12 @@ header,
   </div>
 
 </footer>
+   <!-- ✅ WHATSAPP BUTTON (FIXED + WORKING) -->
+  <a href="https://wa.me/639391209602?text=Hello%20I%27m%20interested%20in%20your%20property%20listings" target="_blank"
+    class="chat-btn">
+    💬 Chat with us
+  </a>
+</body>
+
+</body>
+</html>
